@@ -624,3 +624,14 @@ header .header-text a:active {
     display: none;
   }
 }
+.main-container-about .middle-section-about {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+.main-container-about .middle-section-about p {
+  margin-top: 5%;
+}
