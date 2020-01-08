@@ -4,6 +4,10 @@ header {
     height: 34.25%;
     background: linear-gradient(38.54deg, #FFFFFF 21.78%, #D1D1D1 113.31%);
     .displayFlex(flex, space-around, center);
+    @media @tablet {
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
     @media @mobile {
         padding-top: 7%;
         padding-bottom: 7%;
@@ -113,11 +117,17 @@ header {
         .customize {
             width: 36%;
             .displayFlex(column, center, center);
+            @media @tablet {
+                margin-right: 1%;
+            }
             @media @mobile {
                 width: 99%;
             }
             img {
                margin-bottom: 12%; 
+               @media @tablet {
+                margin-bottom: 25%;
+            } 
                @media @mobile {
                 margin-top: 11%;
             } 
@@ -148,6 +158,8 @@ header {
                     @media @tablet {
                         font-size: 1.2rem;
                         line-height: 1.4rem;
+                        margin-top: 6%;
+                        
                     }
 
                     @media @mobile {
@@ -162,11 +174,17 @@ header {
         .progress {
             width: 36%;
             .displayFlex(column, center, center);
+            @media @tablet {
+                margin-right: 1%;
+            }
             @media @mobile {
                 width: 99%;
             }
             img {
                margin-bottom: 11%; 
+               @media @tablet {
+                   margin-bottom: 24%;
+               }
                @media @mobile {
                 margin-top: 23%;
             } 
@@ -190,6 +208,7 @@ header {
                     @media @tablet {
                         font-size: 1.2rem;
                         line-height: 1.4rem;
+                        margin-top: 2%;
                     }
                 }
             }
@@ -199,11 +218,17 @@ header {
         .consistency {
             width: 31%;
             .displayFlex(column, center, center);
+            @media @tablet {
+                margin-right: 1%;
+            }
             @media @mobile {
                 width: 99%;
             }
             img {
-                margin-bottom: 13%; 
+                margin-bottom: 13%;
+                @media @tablet {
+                    margin-bottom: 27%;
+                } 
                 @media @mobile {
                     margin-top: 23%;
                 } 
@@ -229,6 +254,7 @@ header {
                     @media @tablet {
                         font-size: 1.2rem;
                         line-height: 1.4rem;
+                        margin-top: 2%;
                     }
                 }
             }
