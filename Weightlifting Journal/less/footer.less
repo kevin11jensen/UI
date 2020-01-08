@@ -1,0 +1,42 @@
+footer {
+    background-color: @mine-shaft;
+    color: @white;
+    padding: 2%;
+    
+    .footer-text {
+        margin-left: 40%;
+        .displayFlex(flex, space-between, center);
+        @media @mobile {
+            .displayFlex(column, center, center);
+            margin: 1%;
+        }
+        
+        p {
+            @media @tablet {
+                font-size: 1.6rem;
+            }
+            @media @mobile {
+                padding-bottom: 3%;
+            }
+            span {
+                color: @green-jelly;
+            }
+        }
+        #contact {
+            color: @green-jelly;
+            font-size: 1.8rem;
+            @media @tablet {
+                font-size: 1.6rem;
+            }
+            i {
+                span {
+                    font-family: 'Roboto', sans-serif;
+                    margin-left: 11%;
+                    @media @tablet {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
