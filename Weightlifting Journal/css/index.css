@@ -253,7 +253,6 @@ footer .footer-text #contact {
 }
 footer .footer-text #contact i span {
   font-family: 'Roboto', sans-serif;
-  margin-left: 11%;
 }
 @media (max-width: 768px) {
   footer .footer-text #contact i span {
