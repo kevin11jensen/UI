@@ -241,12 +241,17 @@ nav .dropdown-content {
   display: none;
   position: absolute;
   background-color: #007343;
-  min-width: 33rem;
+  min-width: 39rem;
   box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
   padding: 1.2rem 1.6rem;
   z-index: 1;
   left: auto;
   right: 0;
+}
+@media (max-width: 376px) {
+  nav .dropdown-content {
+    min-width: 31rem;
+  }
 }
 nav .dropdown-content a {
   text-decoration: none;
@@ -704,5 +709,6 @@ header .header-text a:active {
   font-family: 'Roboto', sans-serif;
 }
 .main-container-about .middle-section-about p {
+  text-align: center;
   margin-top: 5%;
 }
