@@ -221,9 +221,13 @@ nav .dropdown {
     position: relative;
     display: inline-block;
   }
-  nav .dropdown span div {
+  nav .dropdown .dropbtn {
+    background-color: #00a35e;
+    border: none;
+  }
+  nav .dropdown .dropbtn span div {
     width: 3rem;
-    height: 0.25rem;
+    height: 0.14rem;
     background-color: #ffffff;
     margin: 0.4rem 0;
     border-radius: 1rem;
