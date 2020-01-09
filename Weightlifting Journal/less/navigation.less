@@ -89,8 +89,11 @@ nav {
         display: none;
         position: absolute;
         background-color: @dark-malachite;
-        min-width: 39rem;
+        min-width: 40rem;
         @media @mobile {
+          min-width: 38rem;
+        }
+        @media @minimum {
           min-width: 31rem;
         }
         box-shadow: 0rem .8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
