@@ -650,25 +650,37 @@ header .header-text a:active {
     line-height: 1.6rem;
   }
 }
-.main-container .bottom-section .bottom-section-text button {
-  background: #ffffff;
-  color: #00a35e;
-  border-color: #00a35e;
+.main-container .bottom-section .bottom-section-text a {
   font-size: 1.6rem;
-  border-radius: 0.5rem;
-  padding: 2% 6% 2% 6%;
   border: 1px solid #00a35e;
+  border-radius: 0.5rem;
+  padding: 3% 6% 3% 6%;
+  color: #00a35e;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.9rem;
+  text-decoration: none;
+  margin-top: 3%;
 }
 @media (max-width: 376px) {
-  .main-container .bottom-section .bottom-section-text button {
-    background: #ffffff;
-    color: #00a35e;
-    border-color: #00a35e;
-    font-size: 1.4rem;
-    border-radius: 0.5rem;
-    padding: 2% 6% 2% 6%;
-    line-height: 1.6rem;
+  .main-container .bottom-section .bottom-section-text a {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
   }
+}
+.main-container .bottom-section .bottom-section-text a:hover {
+  background-color: #00a35e;
+  color: #fafafa;
+}
+.main-container .bottom-section .bottom-section-text a:active {
+  background-color: #007343;
+  color: #fafafa;
 }
 .main-container .bottom-section img {
   width: 33%;

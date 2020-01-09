@@ -307,17 +307,42 @@ header {
                 }
 
             }
-
-            button {
-                .button(1.6rem, .5rem, 2% 6% 2% 6%);
+            a {
+                font-size: 1.6rem;
                 border: 1px solid @malachite;
-
+                border-radius: .5rem;
+                padding: 3% 6% 3% 6%;
+                color: @malachite;
+                background-color: @alabaster;
+                .displayFlex(flex, center, center);
+                width: 33%;
                 @media @mobile {
-                    .button(1.4rem, .5rem, 2% 6% 2% 6%);
-                    line-height: 1.6rem;
+                    font-size: .8rem;
+                    line-height: .9rem;
                 }
-
+    
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.9rem;
+                text-decoration: none;
+                margin-top: 3%;
+    
+    
+    
             }
+    
+    
+            a:hover {
+                background-color: @malachite;
+                color: @alabaster;
+            }
+    
+            a:active {
+                background-color: #007343;
+                color: @alabaster;
+            }
+    
+            
         }
 
         img {
