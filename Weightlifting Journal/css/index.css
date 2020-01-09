@@ -248,7 +248,7 @@ nav .dropdown-content a {
   font-size: 1.4rem;
   background-color: #00a35e;
   color: #ffffff;
-  padding: 2%;
+  padding: 5%;
   line-height: 1.6rem;
 }
 nav .dropdown:hover .dropdown-content {
