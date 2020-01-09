@@ -492,7 +492,7 @@ header .header-text a:active {
 }
 @media (max-width: 376px) {
   .main-container .middle-content .customize .customize-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4rem;
   }
 }
