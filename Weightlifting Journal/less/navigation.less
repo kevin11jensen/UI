@@ -3,51 +3,108 @@ nav {
     height: 3.75vh;
     padding: 3%;
     
-        .displayFlex(flex, space-between, center);
-            background-color: @malachite;
-            
-        
-        .nav-left {
-            font-family: 'Roboto', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 1.6rem;
-            line-height: 1.9rem;
-            text-align: center;
+    .displayFlex(flex, space-between, center);
+    background-color: @malachite;
+
+    
+    .nav-left {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        text-align: center;
+        color: @white;
+        text-decoration: none;
+
+        a {
             color: @white;
             text-decoration: none;
-                a {
-                    color: @white;
-                    text-decoration: none;
-                }
+        }
+        
+    }
+
+    .nav-links {
+        @media @mobile {
+            display: none;
+            
+        }
+        @media @menu-bar {
+            display: none;
+        }
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.9rem;
+
+        @media @tablet {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
         }
 
-        .nav-links {
-            @media @mobile {
-                display: none;
-            }
-            font-family: 'Roboto', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.9rem;
-            @media @tablet {
-                font-size: 1.4rem;
-                line-height: 1.6rem;
-            }
-            line-height: 2.2rem;
-            text-align: center;
-            width: 35%;
-            .displayFlex(flex, space-around, center);
-                a {
-                    color: @white;
-                    text-decoration: none;
-                    
-                }
-                a:hover {
-                    border-bottom: solid #ffffff .4rem;
-                    
-                  }
-            
+        line-height: 2.2rem;
+        text-align: center;
+        width: 35%;
+        .displayFlex(flex, space-around, center);
+
+        a {
+            color: @white;
+            text-decoration: none;
+
         }
-            
+
+        a:hover {
+            border-bottom: solid #ffffff .4rem;
+
+        }
+
+    }
+    .dropdown {
+        display: none;
+        @media @menu-bar {
+          position: relative;
+          display: inline-block;
+        span {
+          div {
+            width: 3rem;
+            height: .25rem;
+            background-color: @white;
+            margin: .4rem 0;
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: @malachite;
+        min-width: 29rem;
+        box-shadow: 0rem .8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+        padding: 1.2rem 1.6rem;
+        z-index: 1;
+        left: auto;
+        right: 0;
+        
+        a {
+          text-decoration: none;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.4rem;
+          background-color: @malachite;
+          color: @white;
+          padding: 2%;
+          line-height: 1.6rem;
+        }
+      }
+      
+      .dropdown:hover .dropdown-content {
+        .displayFlex(column, center, flex-start);
+
+
+      }
 }
+        
+    
+
